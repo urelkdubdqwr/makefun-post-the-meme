@@ -68,7 +68,7 @@ card_h = 150
 gap = 28
 radius = 18
 total = len(cards) * card_h + (len(cards) - 1) * gap
-start_y = 330 + (H - 330 - 380 - total) // 2
+start_y = 330 + (H - 330 - 380 - total) // 2 + 67  # keep first card ~40px below the "you: asleep." baseline
 
 for i, (bold_part, rest) in enumerate(cards):
     y = start_y + i * (card_h + gap)
